@@ -1,0 +1,53 @@
+.four {
+   width: 100px;
+   height: 100px;
+   background: blue;
+   transition-duration: 1000ms;
+   transition-property: background, transform;
+}
+
+.four:hover {
+   transform: rotate(180deg);
+   width: 200px;
+   height: 200px;
+   background: #fecaca;
+}
+
+.tik {
+   width: 400px;
+   height: 100px;
+   background-color: white;
+   border: 1px solid red;
+   position: relative;
+}
+
+.don {
+   width: 98px;
+   height: 98px;
+   background-color: red;
+   border-radius: 60%;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   animation: circle 10s infinite;
+}
+
+img {
+   width: 190px;
+   height: 190px;
+   animation: move 15s infinite;
+}
+
+@keyframes circle {
+   50% {
+      left: 301px;
+   }
+
+}
+
+@keyframes move {
+   100% {
+      transform: rotate(600deg)
+     
+   }
+}
